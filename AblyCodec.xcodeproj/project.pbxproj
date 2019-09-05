@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BC7E9D23214BF600CF6FFD /* ARTCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BC7E9E23214BF600CF6FFD /* ARTCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTCodec.mm */; };
 		D7BC7EA0232158C800CF6FFD /* libxdelta3decode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +17,8 @@
 		D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7E8123211AC100CF6FFD /* AblyCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AblyCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BC7E9B23214BF600CF6FFD /* ARTCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARTCodec.h; path = source/ARTCodec.h; sourceTree = SOURCE_ROOT; };
+		D7BC7E9C23214BF600CF6FFD /* ARTCodec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ARTCodec.mm; path = source/ARTCodec.mm; sourceTree = SOURCE_ROOT; };
 		D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxdelta3decode.a; path = libs/xdelta3/lib/x86_64/libxdelta3decode.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				D7BC7E8123211AC100CF6FFD /* AblyCodec.h */,
+				D7BC7E9B23214BF600CF6FFD /* ARTCodec.h */,
+				D7BC7E9C23214BF600CF6FFD /* ARTCodec.mm */,
 				D7BC7E8223211AC100CF6FFD /* Info.plist */,
 			);
 			path = AblyCodec;
@@ -74,6 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BC7E9D23214BF600CF6FFD /* ARTCodec.h in Headers */,
 				D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BC7E9E23214BF600CF6FFD /* ARTCodec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
