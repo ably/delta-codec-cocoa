@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7BC7E9A23214B0B00CF6FFD /* libxdelta3decode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */; };
+		D7BC7EA0232158C800CF6FFD /* libxdelta3decode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7E8123211AC100CF6FFD /* AblyCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AblyCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxdelta3decode.a; path = libs/libxdelta3decode.a; sourceTree = "<group>"; };
+		D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxdelta3decode.a; path = libs/xdelta3/lib/x86_64/libxdelta3decode.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,7 +23,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BC7E9A23214B0B00CF6FFD /* libxdelta3decode.a in Frameworks */,
+				D7BC7EA0232158C800CF6FFD /* libxdelta3decode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +62,7 @@
 		D7BC7E9823214B0B00CF6FFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */,
+				D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,6 +281,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/xdelta3/include";
 				INFOPLIST_FILE = AblyCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,7 +295,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/libs/xdelta3/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -307,6 +315,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/xdelta3/include";
 				INFOPLIST_FILE = AblyCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,7 +326,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/libs/xdelta3/**",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
