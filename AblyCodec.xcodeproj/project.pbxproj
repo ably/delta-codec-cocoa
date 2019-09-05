@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BC7E9A23214B0B00CF6FFD /* libxdelta3decode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7E8123211AC100CF6FFD /* AblyCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AblyCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxdelta3decode.a; path = libs/libxdelta3decode.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BC7E9A23214B0B00CF6FFD /* libxdelta3decode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +35,7 @@
 			children = (
 				D7BC7E8023211AC100CF6FFD /* AblyCodec */,
 				D7BC7E7F23211AC100CF6FFD /* Products */,
+				D7BC7E9823214B0B00CF6FFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +54,14 @@
 				D7BC7E8223211AC100CF6FFD /* Info.plist */,
 			);
 			path = AblyCodec;
+			sourceTree = "<group>";
+		};
+		D7BC7E9823214B0B00CF6FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC7E9923214B0B00CF6FFD /* libxdelta3decode.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +285,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -297,6 +313,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
