@@ -21,27 +21,27 @@
 
     NSString *expectedOutput = @"fhgj fhgj input1 fhgj fhgj";
 
-    const uint8_t *cbase = (const uint8_t *)baseData.bytes;
-    usize_t cbase_size = baseData.length;
-    const uint8_t *cdelta = (const uint8_t *)deltaData.bytes;
-    usize_t cdelta_size = deltaData.length;
+    const uint8_t *base_buf = (const uint8_t *)baseData.bytes;
+    usize_t base_size = baseData.length;
+    const uint8_t *delta_buf = (const uint8_t *)deltaData.bytes;
+    usize_t delta_size = deltaData.length;
 
     int result;
     // The output array must be large enough
-    NSMutableData *output = [NSMutableData dataWithLength:sizeof(uint8_t) * 32 * 1024 * 1024];
-    usize_t output_size = output.length;
-    uint8_t *output_buf = (uint8_t *)[output mutableBytes];
+    NSMutableData *outputData = [NSMutableData dataWithLength:sizeof(uint8_t) * 32 * 1024 * 1024];
+    usize_t output_size = outputData.length;
+    uint8_t *output_buf = (uint8_t *)outputData.mutableBytes;
 
     //int xd3_decode_memory(const uint8_t *inputOut, usize_t input_size, const uint8_t *source, usize_t source_size, uint8_t *output_buf, usize_t *output_size, usize_t avail_output, int flags)
 
-    result = xd3_decode_memory(cdelta, cbase_size, cbase, cdelta_size, output_buf, &output_size, output_size, 0);
+    result = xd3_decode_memory(delta_buf, delta_size, base_buf, base_size, output_buf, &output_size, output_size, 0);
 
     switch (result) {
         case ENOSPC:
             NSLog(@"Output size is not large enough");
             return;
         case XD3_INVALID_INPUT:
-            NSLog(@"ERROR %d - invalid input/decoder error", result);
+            NSLog(@"ERROR %d invalid input/decoder error", result);
             return;
     }
 
@@ -50,16 +50,23 @@
         return;
     }
 
+    NSString *output = [[NSString alloc] initWithBytes:outputData.bytes length:outputData.length encoding:NSUTF8StringEncoding];
+
+    NSLog(@"%@", output);
+    NSLog(@"%@", expectedOutput);
+    NSLog(@"%d", [expectedOutput isEqualToString:output]);
+    NSLog(@"%d", [expectedOutput isEqual:output]);
+
     // Success:
     // hasVCDiffHeader?
-    NSLog(@"%hhu", cdelta[0]); //214 V
-    NSLog(@"%d", cdelta[0] == 214);
-    NSLog(@"%hhu", cdelta[1]); //195 C
-    NSLog(@"%d", cdelta[1] == 195);
-    NSLog(@"%hhu", cdelta[2]); //196 D
-    NSLog(@"%d", cdelta[2] == 196);
-    NSLog(@"%hhu", cdelta[3]); //0 \0
-    NSLog(@"%d", cdelta[3] == 0); //0 \0
+    NSLog(@"%hhu", delta_buf[0]); //214 V
+    NSLog(@"%d", delta_buf[0] == 214);
+    NSLog(@"%hhu", delta_buf[1]); //195 C
+    NSLog(@"%d", delta_buf[1] == 195);
+    NSLog(@"%hhu", delta_buf[2]); //196 D
+    NSLog(@"%d", delta_buf[2] == 196);
+    NSLog(@"%hhu", delta_buf[3]); //0 \0
+    NSLog(@"%d", delta_buf[3] == 0); //0 \0
 }
 
 @end
