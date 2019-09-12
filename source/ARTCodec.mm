@@ -50,10 +50,13 @@
         return;
     }
 
-    NSString *output = [[NSString alloc] initWithBytes:outputData.bytes length:outputData.length encoding:NSUTF8StringEncoding];
+    NSString *output = [[NSString alloc] initWithBytes:outputData.bytes length:output_size encoding:NSUTF8StringEncoding];
 
     NSLog(@"%@", output);
+    NSLog(@"%lu", output_size);
+    NSLog(@"%lu", (unsigned long)output.length);
     NSLog(@"%@", expectedOutput);
+    NSLog(@"%lu", (unsigned long)expectedOutput.length);
     NSLog(@"%d", [expectedOutput isEqualToString:output]);
     NSLog(@"%d", [expectedOutput isEqual:output]);
 
