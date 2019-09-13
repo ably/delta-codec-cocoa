@@ -1,5 +1,9 @@
 # DeltaCodec
 
+<a href="https://github.com/ably/ably-delta-codec-cocoa/actions">
+  <img src="https://github.com/ably/ably-delta-codec-cocoa/workflows/Build/badge.svg" />
+</a>
+
 Cocoa **VCDiff decoder**.
 
 Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta compression using VCDIFF/RFC 3284 streams.
