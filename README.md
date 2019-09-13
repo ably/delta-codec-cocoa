@@ -15,6 +15,8 @@ NSError *error;
 ARTDeltaCodec *codec = [[ARTDeltaCodec alloc] init];
 [codec setBase:baseData withId:@"m1"];
 NSData *outputData = [codec applyDelta:deltaData deltaId:@"m2" baseId:@"m1" error:&error];
+
+// Output data is a utf-8 string:
 NSString *output = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
 ```
 
