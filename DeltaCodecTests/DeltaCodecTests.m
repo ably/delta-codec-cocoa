@@ -1,6 +1,6 @@
 //
-//  AblyCodecTests.m
-//  AblyCodecTests
+//  DeltaCodecTests.m
+//  DeltaCodecTests
 //
 //  Created by Ricardo Pereira on 05/09/2019.
 //  Copyright © 2019 Ably. All rights reserved.
@@ -8,13 +8,13 @@
 
 #import <XCTest/XCTest.h>
 
-@import AblyCodec;
+@import DeltaCodec;
 
-@interface AblyCodecTests : XCTestCase
+@interface DeltaCodecTests : XCTestCase
 
 @end
 
-@implementation AblyCodecTests {
+@implementation DeltaCodecTests {
     NSString *base;
     NSData *baseData;
     NSString *deltaBase64;

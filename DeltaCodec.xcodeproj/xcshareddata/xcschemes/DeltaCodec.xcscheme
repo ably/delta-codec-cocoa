@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-               BuildableName = "AblyCodec.framework"
-               BlueprintName = "AblyCodec"
-               ReferencedContainer = "container:AblyCodec.xcodeproj">
+               BuildableName = "DeltaCodec.framework"
+               BlueprintName = "DeltaCodec"
+               ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7BC7EA42321C91500CF6FFD"
-               BuildableName = "AblyCodecTests.xctest"
-               BlueprintName = "AblyCodecTests"
-               ReferencedContainer = "container:AblyCodec.xcodeproj">
+               BuildableName = "DeltaCodecTests.xctest"
+               BlueprintName = "DeltaCodecTests"
+               ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "AblyCodec.framework"
-            BlueprintName = "AblyCodec"
-            ReferencedContainer = "container:AblyCodec.xcodeproj">
+            BuildableName = "DeltaCodec.framework"
+            BlueprintName = "DeltaCodec"
+            ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "AblyCodec.framework"
-            BlueprintName = "AblyCodec"
-            ReferencedContainer = "container:AblyCodec.xcodeproj">
+            BuildableName = "DeltaCodec.framework"
+            BlueprintName = "DeltaCodec"
+            ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "AblyCodec.framework"
-            BlueprintName = "AblyCodec"
-            ReferencedContainer = "container:AblyCodec.xcodeproj">
+            BuildableName = "DeltaCodec.framework"
+            BlueprintName = "DeltaCodec"
+            ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

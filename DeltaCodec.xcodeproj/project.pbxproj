@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BC7E8323211AC100CF6FFD /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9D23214BF600CF6FFD /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9E23214BF600CF6FFD /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
 		D7BC7EA0232158C800CF6FFD /* libxdelta3decode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */; };
-		D7BC7EA82321C91500CF6FFD /* AblyCodecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7EA72321C91500CF6FFD /* AblyCodecTests.m */; };
-		D7BC7EAA2321C91500CF6FFD /* AblyCodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */; };
+		D7BC7EA82321C91500CF6FFD /* DeltaCodecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */; };
+		D7BC7EAA2321C91500CF6FFD /* DeltaCodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,14 +26,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7BC7E8123211AC100CF6FFD /* AblyCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AblyCodec.h; sourceTree = "<group>"; };
+		D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeltaCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARTDeltaCodec.h; path = source/ARTDeltaCodec.h; sourceTree = SOURCE_ROOT; };
 		D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ARTDeltaCodec.mm; path = source/ARTDeltaCodec.mm; sourceTree = SOURCE_ROOT; };
 		D7BC7E9F232158C800CF6FFD /* libxdelta3decode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxdelta3decode.a; path = libs/xdelta3/lib/x86_64/libxdelta3decode.a; sourceTree = "<group>"; };
-		D7BC7EA52321C91500CF6FFD /* AblyCodecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AblyCodecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7BC7EA72321C91500CF6FFD /* AblyCodecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AblyCodecTests.m; sourceTree = "<group>"; };
+		D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaCodecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeltaCodecTests.m; sourceTree = "<group>"; };
 		D7BC7EA92321C91500CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BC7EAA2321C91500CF6FFD /* AblyCodec.framework in Frameworks */,
+				D7BC7EAA2321C91500CF6FFD /* DeltaCodec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +60,8 @@
 		D7BC7E7423211AC100CF6FFD = {
 			isa = PBXGroup;
 			children = (
-				D7BC7E8023211AC100CF6FFD /* AblyCodec */,
-				D7BC7EA62321C91500CF6FFD /* AblyCodecTests */,
+				D7BC7E8023211AC100CF6FFD /* DeltaCodec */,
+				D7BC7EA62321C91500CF6FFD /* DeltaCodecTests */,
 				D7BC7E7F23211AC100CF6FFD /* Products */,
 				D7BC7E9823214B0B00CF6FFD /* Frameworks */,
 			);
@@ -70,21 +70,21 @@
 		D7BC7E7F23211AC100CF6FFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */,
-				D7BC7EA52321C91500CF6FFD /* AblyCodecTests.xctest */,
+				D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */,
+				D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7BC7E8023211AC100CF6FFD /* AblyCodec */ = {
+		D7BC7E8023211AC100CF6FFD /* DeltaCodec */ = {
 			isa = PBXGroup;
 			children = (
-				D7BC7E8123211AC100CF6FFD /* AblyCodec.h */,
+				D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */,
 				D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */,
 				D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */,
 				D7BC7E8223211AC100CF6FFD /* Info.plist */,
 			);
-			path = AblyCodec;
+			path = DeltaCodec;
 			sourceTree = "<group>";
 		};
 		D7BC7E9823214B0B00CF6FFD /* Frameworks */ = {
@@ -95,13 +95,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7BC7EA62321C91500CF6FFD /* AblyCodecTests */ = {
+		D7BC7EA62321C91500CF6FFD /* DeltaCodecTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7BC7EA72321C91500CF6FFD /* AblyCodecTests.m */,
+				D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */,
 				D7BC7EA92321C91500CF6FFD /* Info.plist */,
 			);
-			path = AblyCodecTests;
+			path = DeltaCodecTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,16 +112,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BC7E9D23214BF600CF6FFD /* ARTDeltaCodec.h in Headers */,
-				D7BC7E8323211AC100CF6FFD /* AblyCodec.h in Headers */,
+				D7BC7E8323211AC100CF6FFD /* DeltaCodec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7BC7E7D23211AC100CF6FFD /* AblyCodec */ = {
+		D7BC7E7D23211AC100CF6FFD /* DeltaCodec */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "AblyCodec" */;
+			buildConfigurationList = D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec" */;
 			buildPhases = (
 				D7BC7E7923211AC100CF6FFD /* Headers */,
 				D7BC7E7A23211AC100CF6FFD /* Sources */,
@@ -132,14 +132,14 @@
 			);
 			dependencies = (
 			);
-			name = AblyCodec;
+			name = DeltaCodec;
 			productName = AblyCodec;
-			productReference = D7BC7E7E23211AC100CF6FFD /* AblyCodec.framework */;
+			productReference = D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7BC7EA42321C91500CF6FFD /* AblyCodecTests */ = {
+		D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "AblyCodecTests" */;
+			buildConfigurationList = D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodecTests" */;
 			buildPhases = (
 				D7BC7EA12321C91500CF6FFD /* Sources */,
 				D7BC7EA22321C91500CF6FFD /* Frameworks */,
@@ -150,9 +150,9 @@
 			dependencies = (
 				D7BC7EAC2321C91500CF6FFD /* PBXTargetDependency */,
 			);
-			name = AblyCodecTests;
+			name = DeltaCodecTests;
 			productName = AblyCodecTests;
-			productReference = D7BC7EA52321C91500CF6FFD /* AblyCodecTests.xctest */;
+			productReference = D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "AblyCodec" */;
+			buildConfigurationList = D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "DeltaCodec" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,8 +185,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7BC7E7D23211AC100CF6FFD /* AblyCodec */,
-				D7BC7EA42321C91500CF6FFD /* AblyCodecTests */,
+				D7BC7E7D23211AC100CF6FFD /* DeltaCodec */,
+				D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BC7EA82321C91500CF6FFD /* AblyCodecTests.m in Sources */,
+				D7BC7EA82321C91500CF6FFD /* DeltaCodecTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +230,7 @@
 /* Begin PBXTargetDependency section */
 		D7BC7EAC2321C91500CF6FFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7BC7E7D23211AC100CF6FFD /* AblyCodec */;
+			target = D7BC7E7D23211AC100CF6FFD /* DeltaCodec */;
 			targetProxy = D7BC7EAB2321C91500CF6FFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,7 +370,7 @@
 					"HAVE_CONFIG_H=1",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/xdelta3/include";
-				INFOPLIST_FILE = AblyCodec/Info.plist;
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +381,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs/xdelta3/**",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
@@ -401,7 +401,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/xdelta3/include";
-				INFOPLIST_FILE = AblyCodec/Info.plist;
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,7 +412,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs/xdelta3/**",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodec;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodec;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 			};
@@ -424,13 +424,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2E58BZR8M3;
-				INFOPLIST_FILE = AblyCodecTests/Info.plist;
+				INFOPLIST_FILE = DeltaCodecTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodecTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,13 +441,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2E58BZR8M3;
-				INFOPLIST_FILE = AblyCodecTests/Info.plist;
+				INFOPLIST_FILE = DeltaCodecTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyCodecTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -455,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "AblyCodec" */ = {
+		D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "DeltaCodec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7BC7E8423211AC100CF6FFD /* Debug */,
@@ -464,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "AblyCodec" */ = {
+		D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7BC7E8723211AC100CF6FFD /* Debug */,
@@ -473,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "AblyCodecTests" */ = {
+		D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodecTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7BC7EAE2321C91500CF6FFD /* Debug */,
