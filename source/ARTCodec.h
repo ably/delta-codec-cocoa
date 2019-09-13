@@ -10,9 +10,40 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ARTCodec : NSObject
+FOUNDATION_EXPORT NSString *const ARTDeltaCodecErrorDomain;
 
-- (void)test;
+/**
+ The list of all client error codes returned under the error domain ARTAblyErrorDomain
+ */
+typedef CF_ENUM(NSUInteger, ARTDeltaCodecCodeError) {
+    ARTDeltaCodecCodeErrorInternalFailure,
+    ARTDeltaCodecCodeErrorUninitializedDecoder,
+    ARTDeltaCodecCodeErrorInvalidBaseId,
+    ARTDeltaCodecCodeErrorBaseIdMismatch,
+    ARTDeltaCodecCodeErrorInvalidDeltaId,
+    ARTDeltaCodecCodeErrorInvalidBaseData,
+    ARTDeltaCodecCodeErrorInvalidDeltaData
+};
+
+@interface ARTDeltaCodec : NSObject
+
+@property (nullable, readonly, copy) NSData *base;
+@property (nullable, readonly) NSString *baseId;
+
+/**
+ Check if the delta data is a valid VCDiff/RFC3284 stream.
+ */
++ (BOOL)isDelta:(NSData *)delta;
+
+/**
+ Assign a base of the encoded target.
+ */
+- (void)setBase:(NSData *)base withId:(NSString *)baseId;
+
+/**
+ Decode data with a valid delta.
+ */
+- (nullable NSData *)applyDelta:(NSData *)delta deltaId:(NSString *)deltaId baseId:(NSString *)baseId error:(NSError *__autoreleasing _Nullable * _Nullable)error;
 
 @end
 

@@ -10,66 +10,122 @@
 
 #import "xdelta3.h"
 
-@implementation ARTCodec
+NSString *const ARTDeltaCodecErrorDomain = @"io.ably.delta-codec";
 
-- (void)test {
-    NSString *base = @"fhgj fhgj input0 fhgj fhgj";
-    NSData *baseData = [base dataUsingEncoding:NSUTF8StringEncoding];
+@implementation ARTDeltaCodec
 
-    NSString *deltaBase64 = @"1sPEAAABGgALGgABAwIxHwIaABA=";
-    NSData *deltaData = [[NSData alloc] initWithBase64EncodedString:deltaBase64 options:NSDataBase64DecodingIgnoreUnknownCharacters];
++ (BOOL)isDelta:(NSData *)delta {
+    if (!delta || delta.length <= 0) {
+        return false;
+    }
 
-    NSString *expectedOutput = @"fhgj fhgj input1 fhgj fhgj";
+    const uint8_t *delta_buf = (const uint8_t *)delta.bytes;
 
-    const uint8_t *base_buf = (const uint8_t *)baseData.bytes;
-    usize_t base_size = baseData.length;
-    const uint8_t *delta_buf = (const uint8_t *)deltaData.bytes;
-    usize_t delta_size = deltaData.length;
+    if (delta_buf &&
+        delta_buf[0] == 214 && //V
+        delta_buf[1] == 195 && //C
+        delta_buf[2] == 196 && //D
+        delta_buf[3] == 0) { //\0
+        return true;
+    }
+
+    return false;
+}
+
+- (NSData *)applyDelta:(NSData *)delta deltaId:(NSString *)deltaId baseId:(NSString *)baseId error:(NSError **)error {
+    if (!self.base) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorUninitializedDecoder
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Decoder was not initialized with a valid base",
+                                                NSLocalizedFailureReasonErrorKey: @"Base is nil"
+                                                }];
+        }
+        return nil;
+    }
+    
+    if (![self.baseId isEqualToString:baseId]) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorBaseIdMismatch
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Provided baseId does not match the last preserved baseId in the sequence",
+                                                NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:@"Last baseId is '%@' and the provided is '%@'", self.baseId, baseId]
+                                                }];
+        }
+        return nil;
+    }
+    
+    if (![self.class isDelta:delta]) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorInvalidDeltaData
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Delta not accepted",
+                                                NSLocalizedFailureReasonErrorKey: @"Delta should be a valid VCDiff/RFC3284 stream"
+                                                }];
+        }
+        return nil;
+    }
+
+    const uint8_t *base_buf = (const uint8_t *)self.base.bytes;
+    usize_t base_size = self.base.length;
+    const uint8_t *delta_buf = (const uint8_t *)delta.bytes;
+    usize_t delta_size = delta.length;
 
     int result;
     // The output array must be large enough
-    NSMutableData *outputData = [NSMutableData dataWithLength:sizeof(uint8_t) * 32 * 1024 * 1024];
-    usize_t output_size = outputData.length;
+    usize_t output_size = sizeof(uint8_t) * 32 * 1024 * 1024; //32 MB
+    NSMutableData *outputData = [NSMutableData dataWithLength:output_size];
     uint8_t *output_buf = (uint8_t *)outputData.mutableBytes;
-
-    //int xd3_decode_memory(const uint8_t *inputOut, usize_t input_size, const uint8_t *source, usize_t source_size, uint8_t *output_buf, usize_t *output_size, usize_t avail_output, int flags)
 
     result = xd3_decode_memory(delta_buf, delta_size, base_buf, base_size, output_buf, &output_size, output_size, 0);
 
     switch (result) {
         case ENOSPC:
-            NSLog(@"Output size is not large enough");
-            return;
+            if (error) {
+                *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                             code:ARTDeltaCodecCodeErrorInternalFailure
+                                         userInfo:@{
+                                                    NSLocalizedDescriptionKey: @"Output size is not large enough",
+                                                    NSLocalizedFailureReasonErrorKey: @"ENOSPC"
+                                                    }];
+            }
+            return nil;
         case XD3_INVALID_INPUT:
-            NSLog(@"ERROR %d invalid input/decoder error", result);
-            return;
+            if (error) {
+                *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                             code:ARTDeltaCodecCodeErrorInvalidDeltaData
+                                         userInfo:@{
+                                                    NSLocalizedDescriptionKey: @"Invalid input/decoder error",
+                                                    NSLocalizedFailureReasonErrorKey: @"XD3_INVALID_INPUT"
+                                                    }];
+            }
+            return nil;
     }
 
     if (result) {
-        NSLog(@"ERROR %d", result);
-        return;
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorInternalFailure
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Unspecified error %d", result],
+                                                }];
+        }
+        return nil;
     }
 
-    NSString *output = [[NSString alloc] initWithBytes:outputData.bytes length:output_size encoding:NSUTF8StringEncoding];
+    [outputData setLength:output_size];
 
-    NSLog(@"%@", output);
-    NSLog(@"%lu", output_size);
-    NSLog(@"%lu", (unsigned long)output.length);
-    NSLog(@"%@", expectedOutput);
-    NSLog(@"%lu", (unsigned long)expectedOutput.length);
-    NSLog(@"%d", [expectedOutput isEqualToString:output]);
-    NSLog(@"%d", [expectedOutput isEqual:output]);
+    [self setBase:outputData withId:deltaId];
 
-    // Success:
-    // hasVCDiffHeader?
-    NSLog(@"%hhu", delta_buf[0]); //214 V
-    NSLog(@"%d", delta_buf[0] == 214);
-    NSLog(@"%hhu", delta_buf[1]); //195 C
-    NSLog(@"%d", delta_buf[1] == 195);
-    NSLog(@"%hhu", delta_buf[2]); //196 D
-    NSLog(@"%d", delta_buf[2] == 196);
-    NSLog(@"%hhu", delta_buf[3]); //0 \0
-    NSLog(@"%d", delta_buf[3] == 0); //0 \0
+    return outputData;
+}
+
+- (void)setBase:(NSData *)base withId:(NSString *)baseId {
+    _base = base;
+    _baseId = baseId;
 }
 
 @end
