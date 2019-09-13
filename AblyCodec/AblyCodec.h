@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char AblyCodecVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AblyCodec/PublicHeader.h>
 
 
-#import <AblyCodec/ARTCodec.h>
+#import <AblyCodec/ARTDeltaCodec.h>

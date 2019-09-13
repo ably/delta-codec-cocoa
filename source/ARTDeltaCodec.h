@@ -1,5 +1,5 @@
 //
-//  ARTCodec.h
+//  ARTDeltaCodec.h
 //  AblyCodec
 //
 //  Created by Ricardo Pereira on 05/09/2019.
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSString *const ARTDeltaCodecErrorDomain;
 
 /**
- The list of all client error codes returned under the error domain ARTAblyErrorDomain
+ The list of all error codes returned under the error domain ARTDeltaCodecErrorDomain.
  */
 typedef CF_ENUM(NSUInteger, ARTDeltaCodecCodeError) {
     ARTDeltaCodecCodeErrorInternalFailure,
