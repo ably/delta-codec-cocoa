@@ -6,7 +6,7 @@
 
 Cocoa **VCDiff decoder**.
 
-Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta compression using VCDIFF/RFC 3284 streams.
+Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta compression using VCDIFF/[RFC 3284](https://tools.ietf.org/html/rfc3284) streams.
 
 ```objc
 @import DeltaCodec;
@@ -16,7 +16,7 @@ ARTDeltaCodec *codec = [[ARTDeltaCodec alloc] init];
 [codec setBase:baseData withId:@"m1"];
 NSData *outputData = [codec applyDelta:deltaData deltaId:@"m2" baseId:@"m1" error:&error];
 
-// Output data is a utf-8 string:
+// Output data is an utf-8 string:
 NSString *output = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
 ```
 
@@ -28,7 +28,7 @@ NSString *output = [[NSString alloc] initWithData:outputData encoding:NSUTF8Stri
 
 Returns a `BOOL` telling if it's a valid delta or not.
 
-`delta` is a binary encoded as **vcdiff**, as specified in [RFC 3284](https://tools.ietf.org/html/rfc3284).
+`delta` is a binary encoded as **vcdiff**, as specified in RFC 3284.
 
 ### -(void)setBase:base withId:baseId;
 
@@ -50,7 +50,7 @@ Returns nothing.
 
 Returns a `NSData` object of the target. It can return `nil`.
 
-`delta` is the binary encoding of the information needed to transform the source to the target. It is encoded as vcdiff, as specified in [RFC 3284](https://tools.ietf.org/html/rfc3284).
+`delta` is the binary encoding of the information needed to transform the source to the target. It is encoded as vcdiff, as specified in RFC 3284.
 
 `deltaId ` is an identifier of the delta.
 
@@ -60,6 +60,7 @@ Returns a `NSData` object of the target. It can return `nil`.
 
 The `delta` will be the new `base`.
 
-## API (Swift)
+## TODO
 
-TODO
+ - [ ] Check compatibility with Swift
+ - [ ] Add compatibility for different CPU architectures (arm64, armv7s, x86_64, etc.)
