@@ -5,10 +5,11 @@ Cocoa **VCDiff decoder**.
 Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta compression using VCDIFF/RFC 3284 streams.
 
 ```objc
+@import DeltaCodec;
+
 NSError *error;
 ARTDeltaCodec *codec = [[ARTDeltaCodec alloc] init];
 [codec setBase:baseData withId:@"m1"];
-
 NSData *outputData = [codec applyDelta:deltaData deltaId:@"m2" baseId:@"m1" error:&error];
 NSString *output = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
 ```
