@@ -1,7 +1,7 @@
 # DeltaCodec
 
-<a href="https://github.com/ably/ably-delta-codec-cocoa/actions">
-  <img src="https://github.com/ably/ably-delta-codec-cocoa/workflows/Build/badge.svg" />
+<a href="https://github.com/ably/delta-codec-cocoa/actions">
+  <img src="https://github.com/ably/delta-codec-cocoa/workflows/Build/badge.svg" />
 </a>
 
 Cocoa **VCDiff decoder**.
