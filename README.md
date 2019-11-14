@@ -42,14 +42,14 @@ catch {
 
 # API Reference
 
-- [class `isDelta`](#isdelta)
-- [class `applyDelta`](#applydelta)
+- [class `isDelta`](#class-isdelta)
+- [class `applyDelta`](#class-applydelta)
 - [`setBase`](#setbase)
 - [`applyDelta`](#applydelta)
 
 ## Stateless
 
-### isDelta
+### class isDelta
 
 > ###### DECLARATION
 >
@@ -69,7 +69,7 @@ catch {
 
 Returns a `BOOL`/`Boolean` telling if it's a valid delta or not.
 
-### applyDelta
+### class applyDelta
 
 > ###### DECLARATION
 >
