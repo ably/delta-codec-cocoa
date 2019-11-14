@@ -42,6 +42,11 @@ catch {
 
 # API Reference
 
+- [class `isDelta`](#isdelta)
+- [class `applyDelta`](#applydelta)
+- [`setBase`](#setbase)
+- [`applyDelta`](#applydelta)
+
 ## Stateless
 
 ### isDelta
