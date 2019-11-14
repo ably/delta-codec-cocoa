@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
 		D7BC7E8323211AC100CF6FFD /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9D23214BF600CF6FFD /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9E23214BF600CF6FFD /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaCodecTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaCodecTests.swift; sourceTree = "<group>"; };
 		D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeltaCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */,
+				D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */,
+				D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */,
 				D7BC7EA92321C91500CF6FFD /* Info.plist */,
 			);
 			path = DeltaCodecTests;
@@ -170,6 +175,7 @@
 					};
 					D7BC7EA42321C91500CF6FFD = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -179,6 +185,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D7BC7E7423211AC100CF6FFD;
 			productRefGroup = D7BC7E7F23211AC100CF6FFD /* Products */;
@@ -222,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BC7EA82321C91500CF6FFD /* DeltaCodecTests.m in Sources */,
+				D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +429,7 @@
 		D7BC7EAE2321C91500CF6FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2E58BZR8M3;
@@ -432,12 +441,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		D7BC7EAF2321C91500CF6FFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2E58BZR8M3;
@@ -449,6 +462,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
