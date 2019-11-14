@@ -30,10 +30,19 @@ typedef CF_ENUM(NSUInteger, ARTDeltaCodecCodeError) {
 @property (nullable, readonly, copy) NSData *base;
 @property (nullable, readonly) NSString *baseId;
 
+#pragma mark - Stateless API
+
 /**
  Check if the delta data is a valid VCDiff/RFC3284 stream.
  */
 + (BOOL)isDelta:(NSData *)delta;
+
+/**
+ Decode data using the current and previous delta.
+ */
++ (nullable NSData *)applyDelta:(NSData *)current previous:(NSData *)previous error:(NSError *__autoreleasing _Nullable * _Nullable)error;
+
+#pragma mark - Stateful API
 
 /**
  Assign a base of the encoded target.
@@ -41,7 +50,7 @@ typedef CF_ENUM(NSUInteger, ARTDeltaCodecCodeError) {
 - (void)setBase:(NSData *)base withId:(NSString *)baseId;
 
 /**
- Decode data with a valid delta.
+ Decode data using a valid delta.
  */
 - (nullable NSData *)applyDelta:(NSData *)delta deltaId:(NSString *)deltaId baseId:(NSString *)baseId error:(NSError *__autoreleasing _Nullable * _Nullable)error;
 

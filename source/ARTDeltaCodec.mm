@@ -32,47 +32,35 @@ NSString *const ARTDeltaCodecErrorDomain = @"io.ably.delta-codec";
     return false;
 }
 
-- (NSData *)applyDelta:(NSData *)delta deltaId:(NSString *)deltaId baseId:(NSString *)baseId error:(NSError **)error {
-    if (!self.base) {
-        if (error) {
-            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
-                                         code:ARTDeltaCodecCodeErrorUninitializedDecoder
-                                     userInfo:@{
-                                                NSLocalizedDescriptionKey: @"Decoder was not initialized with a valid base",
-                                                NSLocalizedFailureReasonErrorKey: @"Base is nil"
-                                                }];
-        }
-        return nil;
-    }
-    
-    if (![self.baseId isEqualToString:baseId]) {
-        if (error) {
-            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
-                                         code:ARTDeltaCodecCodeErrorBaseIdMismatch
-                                     userInfo:@{
-                                                NSLocalizedDescriptionKey: @"Provided baseId does not match the last preserved baseId in the sequence",
-                                                NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:@"Last baseId is '%@' and the provided is '%@'", self.baseId, baseId]
-                                                }];
-        }
-        return nil;
-    }
-    
-    if (![self.class isDelta:delta]) {
++ (NSData *)applyDelta:(NSData *)current previous:(NSData *)previous error:(NSError *__autoreleasing  _Nullable *)error {
+    if (![self.class isDelta:current]) {
         if (error) {
             *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
                                          code:ARTDeltaCodecCodeErrorInvalidDeltaData
                                      userInfo:@{
-                                                NSLocalizedDescriptionKey: @"Delta not accepted",
+                                                NSLocalizedDescriptionKey: @"Current delta is not accepted",
                                                 NSLocalizedFailureReasonErrorKey: @"Delta should be a valid VCDiff/RFC3284 stream"
                                                 }];
         }
         return nil;
     }
 
-    const uint8_t *base_buf = (const uint8_t *)self.base.bytes;
-    usize_t base_size = self.base.length;
-    const uint8_t *delta_buf = (const uint8_t *)delta.bytes;
-    usize_t delta_size = delta.length;
+    if (!previous) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorInvalidBaseData
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Previous delta is invalid",
+                                                NSLocalizedFailureReasonErrorKey: @"Previous is nil"
+                                                }];
+        }
+        return nil;
+    }
+
+    const uint8_t *base_buf = (const uint8_t *)previous.bytes;
+    usize_t base_size = previous.length;
+    const uint8_t *delta_buf = (const uint8_t *)current.bytes;
+    usize_t delta_size = current.length;
 
     int result;
     // The output array must be large enough
@@ -117,6 +105,36 @@ NSString *const ARTDeltaCodecErrorDomain = @"io.ably.delta-codec";
     }
 
     [outputData setLength:output_size];
+
+    return outputData;
+}
+
+- (NSData *)applyDelta:(NSData *)delta deltaId:(NSString *)deltaId baseId:(NSString *)baseId error:(NSError **)error {
+    if (!self.base) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorUninitializedDecoder
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Decoder was not initialized with a valid base",
+                                                NSLocalizedFailureReasonErrorKey: @"Base is nil"
+                                                }];
+        }
+        return nil;
+    }
+
+    if (![self.baseId isEqualToString:baseId]) {
+        if (error) {
+            *error = [NSError errorWithDomain:ARTDeltaCodecErrorDomain
+                                         code:ARTDeltaCodecCodeErrorBaseIdMismatch
+                                     userInfo:@{
+                                                NSLocalizedDescriptionKey: @"Provided baseId does not match the last preserved baseId in the sequence",
+                                                NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:@"Last baseId is '%@' and the provided is '%@'", self.baseId, baseId]
+                                                }];
+        }
+        return nil;
+    }
+
+    NSData *outputData = [self.class applyDelta:delta previous:self.base error:error];
 
     [self setBase:outputData withId:deltaId];
 
