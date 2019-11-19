@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ably. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for AblyCodec.
 FOUNDATION_EXPORT double DeltaCodecVersionNumber;

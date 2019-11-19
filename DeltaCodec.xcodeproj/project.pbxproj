@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
+		D71784BD237CE15700FF9B98 /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D71784BF237CE2AA00FF9B98 /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D71784C0237CE52E00FF9B98 /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
+		D7404CAC23843DD70066B5F5 /* xdelta3-djw.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA023843DD70066B5F5 /* xdelta3-djw.h */; };
+		D7404CAD23843DD70066B5F5 /* xdelta3-decode.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA123843DD70066B5F5 /* xdelta3-decode.h */; };
+		D7404CAE23843DD70066B5F5 /* xdelta3-cfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */; };
+		D7404CAF23843DD70066B5F5 /* xdelta3.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA323843DD70066B5F5 /* xdelta3.h */; };
+		D7404CB023843DD70066B5F5 /* xdelta3-blkcache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA423843DD70066B5F5 /* xdelta3-blkcache.h */; };
+		D7404CB123843DD70066B5F5 /* xdelta3-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA523843DD70066B5F5 /* xdelta3-hash.h */; };
+		D7404CB223843DD70066B5F5 /* xdelta3-fgk.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA623843DD70066B5F5 /* xdelta3-fgk.h */; };
+		D7404CB323843DD70066B5F5 /* xdelta3-list.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA723843DD70066B5F5 /* xdelta3-list.h */; };
+		D7404CB423843DD70066B5F5 /* xdelta3-merge.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA823843DD70066B5F5 /* xdelta3-merge.h */; };
+		D7404CB523843DD70066B5F5 /* xdelta3-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA923843DD70066B5F5 /* xdelta3-internal.h */; };
+		D7404CB623843DD70066B5F5 /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = D7404CAA23843DD70066B5F5 /* xdelta3.c */; };
+		D7404CB723843DD70066B5F5 /* xdelta3-main.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CAB23843DD70066B5F5 /* xdelta3-main.h */; };
+		D7404CBA23843E120066B5F5 /* xdelta3-second.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CB823843E120066B5F5 /* xdelta3-second.h */; };
+		D7404CBD23843E8A0066B5F5 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
 		D7BC7E8323211AC100CF6FFD /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9D23214BF600CF6FFD /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9E23214BF600CF6FFD /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
@@ -29,6 +46,21 @@
 /* Begin PBXFileReference section */
 		D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaCodecTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaCodecTests.swift; sourceTree = "<group>"; };
+		D71784B5237CE05100FF9B98 /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7404CA023843DD70066B5F5 /* xdelta3-djw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-djw.h"; path = "xdelta/xdelta3/xdelta3-djw.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA123843DD70066B5F5 /* xdelta3-decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-decode.h"; path = "xdelta/xdelta3/xdelta3-decode.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-cfgs.h"; path = "xdelta/xdelta3/xdelta3-cfgs.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA323843DD70066B5F5 /* xdelta3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xdelta3.h; path = xdelta/xdelta3/xdelta3.h; sourceTree = SOURCE_ROOT; };
+		D7404CA423843DD70066B5F5 /* xdelta3-blkcache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-blkcache.h"; path = "xdelta/xdelta3/xdelta3-blkcache.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA523843DD70066B5F5 /* xdelta3-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-hash.h"; path = "xdelta/xdelta3/xdelta3-hash.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA623843DD70066B5F5 /* xdelta3-fgk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-fgk.h"; path = "xdelta/xdelta3/xdelta3-fgk.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA723843DD70066B5F5 /* xdelta3-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-list.h"; path = "xdelta/xdelta3/xdelta3-list.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA823843DD70066B5F5 /* xdelta3-merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-merge.h"; path = "xdelta/xdelta3/xdelta3-merge.h"; sourceTree = SOURCE_ROOT; };
+		D7404CA923843DD70066B5F5 /* xdelta3-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-internal.h"; path = "xdelta/xdelta3/xdelta3-internal.h"; sourceTree = SOURCE_ROOT; };
+		D7404CAA23843DD70066B5F5 /* xdelta3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xdelta3.c; path = xdelta/xdelta3/xdelta3.c; sourceTree = SOURCE_ROOT; };
+		D7404CAB23843DD70066B5F5 /* xdelta3-main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-main.h"; path = "xdelta/xdelta3/xdelta3-main.h"; sourceTree = SOURCE_ROOT; };
+		D7404CB823843E120066B5F5 /* xdelta3-second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-second.h"; path = "xdelta/xdelta3/xdelta3-second.h"; sourceTree = SOURCE_ROOT; };
+		D7404CBC23843E8A0066B5F5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = source/config.h; sourceTree = SOURCE_ROOT; };
 		D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeltaCodec.h; sourceTree = "<group>"; };
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D71784B2237CE05100FF9B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7BC7E7B23211AC100CF6FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +99,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7404C9F23843DC10066B5F5 /* xdelta */ = {
+			isa = PBXGroup;
+			children = (
+				D7404CA423843DD70066B5F5 /* xdelta3-blkcache.h */,
+				D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */,
+				D7404CA123843DD70066B5F5 /* xdelta3-decode.h */,
+				D7404CA023843DD70066B5F5 /* xdelta3-djw.h */,
+				D7404CA623843DD70066B5F5 /* xdelta3-fgk.h */,
+				D7404CA523843DD70066B5F5 /* xdelta3-hash.h */,
+				D7404CA923843DD70066B5F5 /* xdelta3-internal.h */,
+				D7404CA723843DD70066B5F5 /* xdelta3-list.h */,
+				D7404CAB23843DD70066B5F5 /* xdelta3-main.h */,
+				D7404CA823843DD70066B5F5 /* xdelta3-merge.h */,
+				D7404CB823843E120066B5F5 /* xdelta3-second.h */,
+				D7404CAA23843DD70066B5F5 /* xdelta3.c */,
+				D7404CA323843DD70066B5F5 /* xdelta3.h */,
+				D7404CBC23843E8A0066B5F5 /* config.h */,
+			);
+			name = xdelta;
+			sourceTree = "<group>";
+		};
 		D7BC7E7423211AC100CF6FFD = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +135,7 @@
 			children = (
 				D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */,
 				D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */,
+				D71784B5237CE05100FF9B98 /* DeltaCodec.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +146,7 @@
 				D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */,
 				D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */,
 				D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */,
+				D7404C9F23843DC10066B5F5 /* xdelta */,
 				D7BC7E8223211AC100CF6FFD /* Info.plist */,
 			);
 			path = DeltaCodec;
@@ -112,6 +174,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D71784B0237CE05100FF9B98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7404CB223843DD70066B5F5 /* xdelta3-fgk.h in Headers */,
+				D7404CAD23843DD70066B5F5 /* xdelta3-decode.h in Headers */,
+				D7404CB323843DD70066B5F5 /* xdelta3-list.h in Headers */,
+				D7404CB023843DD70066B5F5 /* xdelta3-blkcache.h in Headers */,
+				D7404CBD23843E8A0066B5F5 /* config.h in Headers */,
+				D7404CB123843DD70066B5F5 /* xdelta3-hash.h in Headers */,
+				D7404CAC23843DD70066B5F5 /* xdelta3-djw.h in Headers */,
+				D7404CAF23843DD70066B5F5 /* xdelta3.h in Headers */,
+				D7404CB723843DD70066B5F5 /* xdelta3-main.h in Headers */,
+				D7404CB523843DD70066B5F5 /* xdelta3-internal.h in Headers */,
+				D7404CAE23843DD70066B5F5 /* xdelta3-cfgs.h in Headers */,
+				D7404CBA23843E120066B5F5 /* xdelta3-second.h in Headers */,
+				D7404CB423843DD70066B5F5 /* xdelta3-merge.h in Headers */,
+				D71784BF237CE2AA00FF9B98 /* ARTDeltaCodec.h in Headers */,
+				D71784BD237CE15700FF9B98 /* DeltaCodec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7BC7E7923211AC100CF6FFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +208,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D71784BA237CE05100FF9B98 /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS" */;
+			buildPhases = (
+				D71784B0237CE05100FF9B98 /* Headers */,
+				D71784B1237CE05100FF9B98 /* Sources */,
+				D71784B2237CE05100FF9B98 /* Frameworks */,
+				D71784B3237CE05100FF9B98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeltaCodec-iOS";
+			productName = "DeltaCode-iOS";
+			productReference = D71784B5237CE05100FF9B98 /* DeltaCodec.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D7BC7E7D23211AC100CF6FFD /* DeltaCodec */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec" */;
@@ -167,9 +269,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ART;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Ably;
 				TargetAttributes = {
+					D71784B4237CE05100FF9B98 = {
+						CreatedOnToolsVersion = 11.2;
+					};
 					D7BC7E7D23211AC100CF6FFD = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -194,11 +299,19 @@
 			targets = (
 				D7BC7E7D23211AC100CF6FFD /* DeltaCodec */,
 				D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */,
+				D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D71784B3237CE05100FF9B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7BC7E7C23211AC100CF6FFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +329,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D71784B1237CE05100FF9B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71784C0237CE52E00FF9B98 /* ARTDeltaCodec.mm in Sources */,
+				D7404CB623843DD70066B5F5 /* xdelta3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7BC7E7A23211AC100CF6FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +366,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D71784BB237CE05100FF9B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D71784BC237CE05100FF9B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D7BC7E8423211AC100CF6FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +534,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -470,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D71784BA237CE05100FF9B98 /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D71784BB237CE05100FF9B98 /* Debug */,
+				D71784BC237CE05100FF9B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "DeltaCodec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
