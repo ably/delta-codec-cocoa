@@ -84,7 +84,7 @@ Returns a `BOOL`/`Boolean` telling if it's a valid delta or not.
 **Arguments**:
 
 * `current`: `NSData`/`Data` (is the binary encoding of the information needed to transform the source to the target. It is encoded as vcdiff, as specified in RFC 3284.)
-* `previous`: `NSData`/`Data` (is the group of bytes to transform into the target. Should be in delta encoding.)
+* `previous`: `NSData`/`Data` (is the group of bytes to transform into the target.)
 * `error`: `NSError` (Objective-C only) (is the error object when something goes wrong. It's nullable so it's optional.)
 
 **Return Value**:
@@ -103,11 +103,11 @@ Returns a `NSData`/`Data` object of the target. It can return `nil`.
 >
 > **Swift**
 >
-> func setBase(_ base: Data, withId baseId: Data) -> Data
+> func setBase(_ base: Data, withId baseId: Data)
 
 **Arguments**:
 
-* `base`: `NSData`/`Data` (is the group of bytes to transform into the target. In delta encoding, this is probably an old, cached version.)
+* `base`: `NSData`/`Data` (is the group of bytes to transform into the target. This is probably an old, cached version.)
 * `baseId`: `NSString`/`String` (is an identifier of the base.)
 
 **Return Value**:
