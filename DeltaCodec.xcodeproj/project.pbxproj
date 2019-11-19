@@ -337,9 +337,9 @@
 			productReference = D71784B5237CE05100FF9B98 /* DeltaCodec.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7BC7E7D23211AC100CF6FFD /* DeltaCodec */ = {
+		D7BC7E7D23211AC100CF6FFD /* DeltaCodec-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec" */;
+			buildConfigurationList = D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec-macOS" */;
 			buildPhases = (
 				D7BC7E7923211AC100CF6FFD /* Headers */,
 				D7BC7E7A23211AC100CF6FFD /* Sources */,
@@ -350,7 +350,7 @@
 			);
 			dependencies = (
 			);
-			name = DeltaCodec;
+			name = "DeltaCodec-macOS";
 			productName = AblyCodec;
 			productReference = D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */;
 			productType = "com.apple.product-type.framework";
@@ -450,8 +450,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7BC7E7D23211AC100CF6FFD /* DeltaCodec */,
 				D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */,
+				D7BC7E7D23211AC100CF6FFD /* DeltaCodec-macOS */,
 				D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */,
 				D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */,
 				D7CF61B6238441FE0019C1AA /* DeltaCodec-watchOS */,
@@ -548,7 +548,7 @@
 /* Begin PBXTargetDependency section */
 		D7BC7EAC2321C91500CF6FFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7BC7E7D23211AC100CF6FFD /* DeltaCodec */;
+			target = D7BC7E7D23211AC100CF6FFD /* DeltaCodec-macOS */;
 			targetProxy = D7BC7EAB2321C91500CF6FFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -747,7 +747,7 @@
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodec;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DeltaCodec;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -768,7 +768,7 @@
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodec;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DeltaCodec;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec" */ = {
+		D7BC7E8623211AC100CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7BC7E8723211AC100CF6FFD /* Debug */,

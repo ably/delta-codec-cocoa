@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-               BuildableName = "DeltaCodec.framework"
-               BlueprintName = "DeltaCodec"
+               BuildableName = "DeltaCodec_macOS.framework"
+               BlueprintName = "DeltaCodec-macOS"
                ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,8 +31,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "DeltaCodec.framework"
-            BlueprintName = "DeltaCodec"
+            BuildableName = "DeltaCodec_macOS.framework"
+            BlueprintName = "DeltaCodec-macOS"
             ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "DeltaCodec.framework"
-            BlueprintName = "DeltaCodec"
+            BuildableName = "DeltaCodec_macOS.framework"
+            BlueprintName = "DeltaCodec-macOS"
             ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7BC7E7D23211AC100CF6FFD"
-            BuildableName = "DeltaCodec.framework"
-            BlueprintName = "DeltaCodec"
+            BuildableName = "DeltaCodec_macOS.framework"
+            BlueprintName = "DeltaCodec-macOS"
             ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
