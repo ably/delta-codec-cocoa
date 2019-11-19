@@ -44,6 +44,40 @@
 		D7CF61A2238441750019C1AA /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = D7404CAA23843DD70066B5F5 /* xdelta3.c */; };
 		D7CF61A3238441750019C1AA /* xdelta3.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA323843DD70066B5F5 /* xdelta3.h */; };
 		D7CF61A4238441750019C1AA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
+		D7CF61BF238442CD0019C1AA /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61C0238442CE0019C1AA /* DeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61C1238442D40019C1AA /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61C2238442D50019C1AA /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61C3238442DA0019C1AA /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
+		D7CF61C4238442DA0019C1AA /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
+		D7CF61C5238442E00019C1AA /* xdelta3-blkcache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA423843DD70066B5F5 /* xdelta3-blkcache.h */; };
+		D7CF61C6238442E00019C1AA /* xdelta3-cfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */; };
+		D7CF61C7238442E00019C1AA /* xdelta3-decode.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA123843DD70066B5F5 /* xdelta3-decode.h */; };
+		D7CF61C8238442E00019C1AA /* xdelta3-djw.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA023843DD70066B5F5 /* xdelta3-djw.h */; };
+		D7CF61C9238442E00019C1AA /* xdelta3-fgk.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA623843DD70066B5F5 /* xdelta3-fgk.h */; };
+		D7CF61CA238442E00019C1AA /* xdelta3-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA523843DD70066B5F5 /* xdelta3-hash.h */; };
+		D7CF61CB238442E00019C1AA /* xdelta3-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA923843DD70066B5F5 /* xdelta3-internal.h */; };
+		D7CF61CC238442E00019C1AA /* xdelta3-list.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA723843DD70066B5F5 /* xdelta3-list.h */; };
+		D7CF61CD238442E00019C1AA /* xdelta3-main.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CAB23843DD70066B5F5 /* xdelta3-main.h */; };
+		D7CF61CE238442E00019C1AA /* xdelta3-merge.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA823843DD70066B5F5 /* xdelta3-merge.h */; };
+		D7CF61CF238442E00019C1AA /* xdelta3-second.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CB823843E120066B5F5 /* xdelta3-second.h */; };
+		D7CF61D0238442E00019C1AA /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = D7404CAA23843DD70066B5F5 /* xdelta3.c */; };
+		D7CF61D1238442E00019C1AA /* xdelta3.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA323843DD70066B5F5 /* xdelta3.h */; };
+		D7CF61D2238442E00019C1AA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
+		D7CF61D3238442E10019C1AA /* xdelta3-blkcache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA423843DD70066B5F5 /* xdelta3-blkcache.h */; };
+		D7CF61D4238442E10019C1AA /* xdelta3-cfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */; };
+		D7CF61D5238442E10019C1AA /* xdelta3-decode.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA123843DD70066B5F5 /* xdelta3-decode.h */; };
+		D7CF61D6238442E10019C1AA /* xdelta3-djw.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA023843DD70066B5F5 /* xdelta3-djw.h */; };
+		D7CF61D7238442E10019C1AA /* xdelta3-fgk.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA623843DD70066B5F5 /* xdelta3-fgk.h */; };
+		D7CF61D8238442E10019C1AA /* xdelta3-hash.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA523843DD70066B5F5 /* xdelta3-hash.h */; };
+		D7CF61D9238442E10019C1AA /* xdelta3-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA923843DD70066B5F5 /* xdelta3-internal.h */; };
+		D7CF61DA238442E10019C1AA /* xdelta3-list.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA723843DD70066B5F5 /* xdelta3-list.h */; };
+		D7CF61DB238442E10019C1AA /* xdelta3-main.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CAB23843DD70066B5F5 /* xdelta3-main.h */; };
+		D7CF61DC238442E10019C1AA /* xdelta3-merge.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA823843DD70066B5F5 /* xdelta3-merge.h */; };
+		D7CF61DD238442E10019C1AA /* xdelta3-second.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CB823843E120066B5F5 /* xdelta3-second.h */; };
+		D7CF61DE238442E10019C1AA /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = D7404CAA23843DD70066B5F5 /* xdelta3.c */; };
+		D7CF61DF238442E10019C1AA /* xdelta3.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA323843DD70066B5F5 /* xdelta3.h */; };
+		D7CF61E0238442E10019C1AA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +116,8 @@
 		D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaCodecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeltaCodecTests.m; sourceTree = "<group>"; };
 		D7BC7EA92321C91500CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7CF61AA238441E90019C1AA /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7CF61B7238441FE0019C1AA /* DeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +140,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BC7EAA2321C91500CF6FFD /* DeltaCodec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61A7238441E90019C1AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61B4238441FE0019C1AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +196,8 @@
 				D7BC7E7E23211AC100CF6FFD /* DeltaCodec.framework */,
 				D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */,
 				D71784B5237CE05100FF9B98 /* DeltaCodec.framework */,
+				D7CF61AA238441E90019C1AA /* DeltaCodec.framework */,
+				D7CF61B7238441FE0019C1AA /* DeltaCodec.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +272,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7CF61A5238441E90019C1AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CF61C8238442E00019C1AA /* xdelta3-djw.h in Headers */,
+				D7CF61C1238442D40019C1AA /* ARTDeltaCodec.h in Headers */,
+				D7CF61CD238442E00019C1AA /* xdelta3-main.h in Headers */,
+				D7CF61CC238442E00019C1AA /* xdelta3-list.h in Headers */,
+				D7CF61CA238442E00019C1AA /* xdelta3-hash.h in Headers */,
+				D7CF61CF238442E00019C1AA /* xdelta3-second.h in Headers */,
+				D7CF61D1238442E00019C1AA /* xdelta3.h in Headers */,
+				D7CF61C9238442E00019C1AA /* xdelta3-fgk.h in Headers */,
+				D7CF61CB238442E00019C1AA /* xdelta3-internal.h in Headers */,
+				D7CF61CE238442E00019C1AA /* xdelta3-merge.h in Headers */,
+				D7CF61C6238442E00019C1AA /* xdelta3-cfgs.h in Headers */,
+				D7CF61C5238442E00019C1AA /* xdelta3-blkcache.h in Headers */,
+				D7CF61BF238442CD0019C1AA /* DeltaCodec.h in Headers */,
+				D7CF61C7238442E00019C1AA /* xdelta3-decode.h in Headers */,
+				D7CF61D2238442E00019C1AA /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61B2238441FE0019C1AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CF61D6238442E10019C1AA /* xdelta3-djw.h in Headers */,
+				D7CF61C2238442D50019C1AA /* ARTDeltaCodec.h in Headers */,
+				D7CF61DB238442E10019C1AA /* xdelta3-main.h in Headers */,
+				D7CF61DA238442E10019C1AA /* xdelta3-list.h in Headers */,
+				D7CF61D8238442E10019C1AA /* xdelta3-hash.h in Headers */,
+				D7CF61DD238442E10019C1AA /* xdelta3-second.h in Headers */,
+				D7CF61DF238442E10019C1AA /* xdelta3.h in Headers */,
+				D7CF61D7238442E10019C1AA /* xdelta3-fgk.h in Headers */,
+				D7CF61D9238442E10019C1AA /* xdelta3-internal.h in Headers */,
+				D7CF61DC238442E10019C1AA /* xdelta3-merge.h in Headers */,
+				D7CF61D4238442E10019C1AA /* xdelta3-cfgs.h in Headers */,
+				D7CF61D3238442E10019C1AA /* xdelta3-blkcache.h in Headers */,
+				D7CF61C0238442CE0019C1AA /* DeltaCodec.h in Headers */,
+				D7CF61D5238442E10019C1AA /* xdelta3-decode.h in Headers */,
+				D7CF61E0238442E10019C1AA /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +373,42 @@
 			productReference = D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CF61AF238441E90019C1AA /* Build configuration list for PBXNativeTarget "DeltaCodec-tvOS" */;
+			buildPhases = (
+				D7CF61A5238441E90019C1AA /* Headers */,
+				D7CF61A6238441E90019C1AA /* Sources */,
+				D7CF61A7238441E90019C1AA /* Frameworks */,
+				D7CF61A8238441E90019C1AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeltaCodec-tvOS";
+			productName = "DeltaCodec-watchOS";
+			productReference = D7CF61AA238441E90019C1AA /* DeltaCodec.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7CF61B6238441FE0019C1AA /* DeltaCodec-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CF61BC238441FE0019C1AA /* Build configuration list for PBXNativeTarget "DeltaCodec-watchOS" */;
+			buildPhases = (
+				D7CF61B2238441FE0019C1AA /* Headers */,
+				D7CF61B3238441FE0019C1AA /* Sources */,
+				D7CF61B4238441FE0019C1AA /* Frameworks */,
+				D7CF61B5238441FE0019C1AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeltaCodec-watchOS";
+			productName = "DeltaCodec-tvOS";
+			productReference = D7CF61B7238441FE0019C1AA /* DeltaCodec.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,6 +429,12 @@
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1120;
 					};
+					D7CF61A9238441E90019C1AA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					D7CF61B6238441FE0019C1AA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = D7BC7E7823211AC100CF6FFD /* Build configuration list for PBXProject "DeltaCodec" */;
@@ -315,6 +453,8 @@
 				D7BC7E7D23211AC100CF6FFD /* DeltaCodec */,
 				D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */,
 				D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */,
+				D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */,
+				D7CF61B6238441FE0019C1AA /* DeltaCodec-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +475,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D7BC7EA32321C91500CF6FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61A8238441E90019C1AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61B5238441FE0019C1AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,6 +522,24 @@
 			files = (
 				D7BC7EA82321C91500CF6FFD /* DeltaCodecTests.m in Sources */,
 				D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61A6238441E90019C1AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CF61C3238442DA0019C1AA /* ARTDeltaCodec.mm in Sources */,
+				D7CF61D0238442E00019C1AA /* xdelta3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CF61B3238441FE0019C1AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CF61C4238442DA0019C1AA /* ARTDeltaCodec.mm in Sources */,
+				D7CF61DE238442E10019C1AA /* xdelta3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +814,117 @@
 			};
 			name = Release;
 		};
+		D7CF61B0238441E90019C1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D7CF61B1238441E90019C1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7CF61BD238441FE0019C1AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"HAVE_CONFIG_H=1",
+				);
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		D7CF61BE238441FE0019C1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
+				INFOPLIST_FILE = DeltaCodec/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
+				PRODUCT_NAME = DeltaCodec;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -677,6 +960,24 @@
 			buildConfigurations = (
 				D7BC7EAE2321C91500CF6FFD /* Debug */,
 				D7BC7EAF2321C91500CF6FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CF61AF238441E90019C1AA /* Build configuration list for PBXNativeTarget "DeltaCodec-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7CF61B0238441E90019C1AA /* Debug */,
+				D7CF61B1238441E90019C1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CF61BC238441FE0019C1AA /* Build configuration list for PBXNativeTarget "DeltaCodec-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7CF61BD238441FE0019C1AA /* Debug */,
+				D7CF61BE238441FE0019C1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
