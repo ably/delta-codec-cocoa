@@ -2,7 +2,7 @@ on: pull_request
 name: Test
 jobs:
   test:
-    name: Test
+    name: Mac
     runs-on: macOS-latest
     steps:
       - name: Checkout
