@@ -2,7 +2,7 @@ on: pull_request
 name: Test
 jobs:
   test:
-    name: Mac
+    name: macOS
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -11,3 +11,23 @@ jobs:
         run: |
           git submodule update --init --recursive
           xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  test:
+    name: iOS
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
+        run: |
+          git submodule update --init --recursive
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  test:
+    name: tvOS
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
+        run: |
+          git submodule update --init --recursive
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
