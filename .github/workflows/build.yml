@@ -17,20 +17,30 @@ jobs:
   iOS:
     name: iOS platform
     runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.0,name=iPhone 11']
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build
         run: |
           git submodule update --init --recursive
-          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+    env:
+      destination: ${{ matrix.destination }}
   tvOS:
     name: tvOS platform
     runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.0,name=iPhone 11']
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build
         run: |
           git submodule update --init --recursive
-          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-tvOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+    env:
+      destination: ${{ matrix.destination }}
