@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
