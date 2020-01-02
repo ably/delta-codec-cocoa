@@ -4,8 +4,8 @@ on:
       - master
 name: Build
 jobs:
-  test:
-    name: macOS
+  macOS:
+    name: macOS platform
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -14,8 +14,8 @@ jobs:
         run: |
           git submodule update --init --recursive
           xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-  test:
-    name: iOS
+  iOS:
+    name: iOS platform
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -24,8 +24,8 @@ jobs:
         run: |
           git submodule update --init --recursive
           xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-  test:
-    name: tvOS
+  tvOS:
+    name: tvOS platform
     runs-on: macOS-latest
     steps:
       - name: Checkout
