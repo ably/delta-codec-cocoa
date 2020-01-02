@@ -11,29 +11,27 @@ jobs:
         run: |
           git submodule update --init --recursive
           xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-  arm:
+  iOS:
     name: ARM
     runs-on: macOS-latest
     strategy:
       matrix:
-        platform: ['iOS', 'tvOS']
-        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 11', 'platform=tvOS Simulator,OS=13.1,name=Apple TV']
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 11']
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build and test
         run: |
           git submodule update --init --recursive
-          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-${platform} -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
     env:
-      platform: ${{ matrix.platform }}
       destination: ${{ matrix.destination }}
   tvOS:
-    name: tvOS platform
+    name: ARM
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ['platform=tvOS Simulator,OS=13.1,name=Apple TV']
+        destination: ['platform=tvOS Simulator,OS=13.0,name=Apple TV']
     steps:
       - name: Checkout
         uses: actions/checkout@master
