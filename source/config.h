@@ -11,10 +11,10 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `lzma' library (-llzma). */
-#define HAVE_LIBLZMA 1
+#define HAVE_LIBLZMA 0
 
 /* Define to 1 if you have the <lzma.h> header file. */
-#define HAVE_LZMA_H 1
+#define HAVE_LZMA_H 0
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
@@ -39,6 +39,9 @@
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
+
+/* Define to 1 if you have the <lzma.h> header file. */
+#define SECONDARY_LZMA 0
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
