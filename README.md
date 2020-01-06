@@ -141,7 +141,3 @@ Returns a `NSData` object of the target. It can return `nil`.
 
 The `delta` will be the new `base`.
 
-## TODO
-
- - [x] Check compatibility with Swift
- - [ ] Add compatibility for different CPU architectures (arm64, armv7s, x86_64, etc.)
