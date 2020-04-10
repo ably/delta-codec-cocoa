@@ -1,6 +1,6 @@
 //
 //  ARTDeltaCodec.h
-//  DeltaCodec
+//  AblyDeltaCodec
 //
 //  Created by Ricardo Pereira on 05/09/2019.
 //  Copyright © 2019 Ably. All rights reserved.
