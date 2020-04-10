@@ -1,4 +1,4 @@
-# DeltaCodec
+# AblyDeltaCodec
 
 <a href="https://github.com/ably/delta-codec-cocoa/actions">
   <img src="https://github.com/ably/delta-codec-cocoa/workflows/Build/badge.svg" />
@@ -11,7 +11,7 @@ Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta 
 ## Objective-C example
 
 ```objc
-@import DeltaCodec;
+@import AblyDeltaCodec;
 
 NSError *error;
 ARTDeltaCodec *codec = [[ARTDeltaCodec alloc] init];
@@ -25,7 +25,7 @@ NSString *output = [[NSString alloc] initWithData:outputData encoding:NSUTF8Stri
 ## Swift example
 
 ```swift
-import DeltaCodec
+import AblyDeltaCodec
 
 let codec = ARTDeltaCodec()
 codec.setBase(baseData, withId: "m1")
