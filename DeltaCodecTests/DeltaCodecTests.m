@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-@import DeltaCodec;
+@import AblyDeltaCodec;
 
 @interface DeltaCodecTests : XCTestCase
 

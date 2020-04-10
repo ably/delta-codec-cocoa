@@ -1,5 +1,5 @@
 //
-//  DeltaCodec.h
+//  AblyDeltaCodec.h
 //  DeltaCodec
 //
 //  Created by Ricardo Pereira on 05/09/2019.
@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char DeltaCodecVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AblyCodec/PublicHeader.h>
 
 
-#import <DeltaCodec/ARTDeltaCodec.h>
+#import <AblyDeltaCodec/ARTDeltaCodec.h>

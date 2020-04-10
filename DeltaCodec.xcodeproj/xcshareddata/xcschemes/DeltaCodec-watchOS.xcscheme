@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7CF61B6238441FE0019C1AA"
-               BuildableName = "DeltaCodec.framework"
+               BuildableName = "AblyDeltaCodec.framework"
                BlueprintName = "DeltaCodec-watchOS"
                ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7CF61B6238441FE0019C1AA"
-            BuildableName = "DeltaCodec.framework"
+            BuildableName = "AblyDeltaCodec.framework"
             BlueprintName = "DeltaCodec-watchOS"
             ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>

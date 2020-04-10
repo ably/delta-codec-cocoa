@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D71784B4237CE05100FF9B98"
-               BuildableName = "DeltaCodec.framework"
+               BuildableName = "AblyDeltaCodec.framework"
                BlueprintName = "DeltaCodec-iOS"
                ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D71784B4237CE05100FF9B98"
-            BuildableName = "DeltaCodec.framework"
+            BuildableName = "AblyDeltaCodec.framework"
             BlueprintName = "DeltaCodec-iOS"
             ReferencedContainer = "container:DeltaCodec.xcodeproj">
          </BuildableReference>
