@@ -1,7 +1,7 @@
 on:
   push:
     branches:    
-      - master
+      - main
 name: Build
 jobs:
   macOS:
@@ -9,7 +9,7 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Build
         run: |
           git submodule update --init --recursive
@@ -22,7 +22,7 @@ jobs:
         destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Build
         run: |
           git submodule update --init --recursive
@@ -37,7 +37,7 @@ jobs:
         destination: ['platform=tvOS Simulator,OS=13.3,name=Apple TV']
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Build
         run: |
           git submodule update --init --recursive
