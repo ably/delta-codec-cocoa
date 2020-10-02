@@ -94,6 +94,7 @@
 		D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaCodecTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaCodecTests.swift; sourceTree = "<group>"; };
 		D71784B5237CE05100FF9B98 /* AblyDeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyDeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71BEFD125277FD7003AD728 /* AblyDeltaCodec.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AblyDeltaCodec.modulemap; sourceTree = "<group>"; };
 		D7404CA023843DD70066B5F5 /* xdelta3-djw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-djw.h"; path = "xdelta/xdelta3/xdelta3-djw.h"; sourceTree = SOURCE_ROOT; };
 		D7404CA123843DD70066B5F5 /* xdelta3-decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-decode.h"; path = "xdelta/xdelta3/xdelta3-decode.h"; sourceTree = SOURCE_ROOT; };
 		D7404CA223843DD70066B5F5 /* xdelta3-cfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-cfgs.h"; path = "xdelta/xdelta3/xdelta3-cfgs.h"; sourceTree = SOURCE_ROOT; };
@@ -206,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */,
+				D71BEFD125277FD7003AD728 /* AblyDeltaCodec.modulemap */,
 				D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */,
 				D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */,
 				D7404C9F23843DC10066B5F5 /* xdelta */,
@@ -575,6 +577,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = iphoneos;
@@ -601,6 +604,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = iphoneos;
@@ -747,6 +751,7 @@
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-macOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SKIP_INSTALL = YES;
@@ -769,6 +774,7 @@
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-macOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SKIP_INSTALL = YES;
@@ -837,6 +843,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = appletvos;
@@ -863,6 +870,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = appletvos;
@@ -893,6 +901,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = watchos;
@@ -919,6 +928,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = watchos;
