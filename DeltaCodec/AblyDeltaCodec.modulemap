@@ -1,0 +1,6 @@
+framework module AblyDeltaCodec {
+    umbrella header "AblyDeltaCodec.h"
+
+    export *
+    module * { export * }
+}
