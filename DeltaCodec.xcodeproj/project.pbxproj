@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
-		D71784BD237CE15700FF9B98 /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D71784BD237CE15700FF9B98 /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D71784BF237CE2AA00FF9B98 /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D71784C0237CE52E00FF9B98 /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
 		D7404CAC23843DD70066B5F5 /* xdelta3-djw.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA023843DD70066B5F5 /* xdelta3-djw.h */; };
@@ -25,7 +25,7 @@
 		D7404CB723843DD70066B5F5 /* xdelta3-main.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CAB23843DD70066B5F5 /* xdelta3-main.h */; };
 		D7404CBA23843E120066B5F5 /* xdelta3-second.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CB823843E120066B5F5 /* xdelta3-second.h */; };
 		D7404CBD23843E8A0066B5F5 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
-		D7BC7E8323211AC100CF6FFD /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BC7E8323211AC100CF6FFD /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9D23214BF600CF6FFD /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BC7E9E23214BF600CF6FFD /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
 		D7BC7EA82321C91500CF6FFD /* DeltaCodecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */; };
@@ -44,8 +44,8 @@
 		D7CF61A2238441750019C1AA /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = D7404CAA23843DD70066B5F5 /* xdelta3.c */; };
 		D7CF61A3238441750019C1AA /* xdelta3.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CA323843DD70066B5F5 /* xdelta3.h */; };
 		D7CF61A4238441750019C1AA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D7404CBC23843E8A0066B5F5 /* config.h */; };
-		D7CF61BF238442CD0019C1AA /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7CF61C0238442CE0019C1AA /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* DeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61BF238442CD0019C1AA /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CF61C0238442CE0019C1AA /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7CF61C1238442D40019C1AA /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7CF61C2238442D50019C1AA /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7CF61C3238442DA0019C1AA /* ARTDeltaCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */; };
@@ -418,7 +418,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ART;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Ably;
 				TargetAttributes = {
 					D71784B4237CE05100FF9B98 = {
@@ -571,7 +571,7 @@
 				);
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +598,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				INFOPLIST_FILE = DeltaCodec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,6 +640,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -670,7 +671,6 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -702,6 +702,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -725,7 +726,6 @@
 				MARKETING_VERSION = 1.2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
