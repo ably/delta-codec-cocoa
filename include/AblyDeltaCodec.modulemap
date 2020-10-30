@@ -1,0 +1,9 @@
+// This file should match AblyDeltaCodec/AblyDeltaCodec.modulemap, except for that it's "module
+// AblyDeltaCodec" rather than "framework module AblyDeltaCodec", and the paths below have the
+// AblyDeltaCodec/ prefix (due to not being a framework module)
+module AblyDeltaCodec {
+    umbrella header "AblyDeltaCodec/AblyDeltaCodec.h"
+
+    export *
+    module * { export * }
+}
