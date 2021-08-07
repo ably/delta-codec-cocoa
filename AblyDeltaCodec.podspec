@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                         Cocoa VCDiff decoder. Uses Xdelta version 3, a C library for delta compression using VCDIFF/RFC 3284 streams.
                         DESC
   s.source            = { :git => "https://github.com/ably/delta-codec-cocoa.git", :tag => s.version.to_s, :submodules => true }
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
   s.osx.deployment_target = '10.12'
