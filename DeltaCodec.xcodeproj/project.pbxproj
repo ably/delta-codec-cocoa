@@ -842,7 +842,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -869,7 +869,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -900,7 +900,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -927,7 +927,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-watchOS";
 				PRODUCT_NAME = AblyDeltaCodec;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
