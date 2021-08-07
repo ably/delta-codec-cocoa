@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D7BC7EA42321C91500CF6FFD"
-               BuildableName = "DeltaCodec-macOS-Tests.xctest"
-               BlueprintName = "DeltaCodec-macOS-Tests"
+               BlueprintIdentifier = "84F2715626BEA3A0001FB60D"
+               BuildableName = "DeltaCodec-iOS-Tests.xctest"
+               BlueprintName = "DeltaCodec-iOS-Tests"
                ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
          </TestableReference>
