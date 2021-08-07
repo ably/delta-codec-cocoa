@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F2715A26BEA3A0001FB60D /* DeltaCodecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */; };
+		84F2715B26BEA3A0001FB60D /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
+		84F2715D26BEA3A0001FB60D /* AblyDeltaCodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E7E23211AC100CF6FFD /* AblyDeltaCodec.framework */; };
+		84F2716826BEA3CD001FB60D /* DeltaCodecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */; };
+		84F2716926BEA3CD001FB60D /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
+		84F2716B26BEA3CD001FB60D /* AblyDeltaCodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BC7E7E23211AC100CF6FFD /* AblyDeltaCodec.framework */; };
 		D71784AF237CC8F700FF9B98 /* DeltaCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */; };
 		D71784BD237CE15700FF9B98 /* AblyDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E8123211AC100CF6FFD /* AblyDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D71784BF237CE2AA00FF9B98 /* ARTDeltaCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,16 +87,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D7BC7EAB2321C91500CF6FFD /* PBXContainerItemProxy */ = {
+		84F2717226BEA5FE001FB60D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7BC7E7523211AC100CF6FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7CF61A9238441E90019C1AA;
+			remoteInfo = "DeltaCodec-tvOS";
+		};
+		84F2717426BEA60D001FB60D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7BC7E7523211AC100CF6FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D71784B4237CE05100FF9B98;
+			remoteInfo = "DeltaCodec-iOS";
+		};
+		84F2717626BEA622001FB60D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D7BC7E7523211AC100CF6FFD /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D7BC7E7D23211AC100CF6FFD;
-			remoteInfo = AblyCodec;
+			remoteInfo = "DeltaCodec-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84F2716226BEA3A0001FB60D /* DeltaCodec-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeltaCodec-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F2716326BEA3A0001FB60D /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "/Users/admin/Work/delta-codec-cocoa/DeltaCodecTests/Info-iOS.plist"; sourceTree = "<absolute>"; };
+		84F2717026BEA3CD001FB60D /* DeltaCodec-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeltaCodec-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F2717126BEA3CD001FB60D /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "/Users/admin/Work/delta-codec-cocoa/DeltaCodecTests/Info-tvOS.plist"; sourceTree = "<absolute>"; };
 		D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaCodecTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaCodecTests.swift; sourceTree = "<group>"; };
 		D71784B5237CE05100FF9B98 /* AblyDeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyDeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,14 +138,30 @@
 		D7BC7E8223211AC100CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7BC7E9B23214BF600CF6FFD /* ARTDeltaCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARTDeltaCodec.h; path = source/ARTDeltaCodec.h; sourceTree = SOURCE_ROOT; };
 		D7BC7E9C23214BF600CF6FFD /* ARTDeltaCodec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ARTDeltaCodec.mm; path = source/ARTDeltaCodec.mm; sourceTree = SOURCE_ROOT; };
-		D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaCodecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BC7EA52321C91500CF6FFD /* DeltaCodec-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeltaCodec-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeltaCodecTests.m; sourceTree = "<group>"; };
-		D7BC7EA92321C91500CF6FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BC7EA92321C91500CF6FFD /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D7CF61AA238441E90019C1AA /* AblyDeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyDeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CF61B7238441FE0019C1AA /* AblyDeltaCodec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AblyDeltaCodec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84F2715C26BEA3A0001FB60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2715D26BEA3A0001FB60D /* AblyDeltaCodec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F2716A26BEA3CD001FB60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2716B26BEA3CD001FB60D /* AblyDeltaCodec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D71784B2237CE05100FF9B98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,10 +235,12 @@
 			isa = PBXGroup;
 			children = (
 				D7BC7E7E23211AC100CF6FFD /* AblyDeltaCodec.framework */,
-				D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */,
+				D7BC7EA52321C91500CF6FFD /* DeltaCodec-macOS-Tests.xctest */,
 				D71784B5237CE05100FF9B98 /* AblyDeltaCodec.framework */,
 				D7CF61AA238441E90019C1AA /* AblyDeltaCodec.framework */,
 				D7CF61B7238441FE0019C1AA /* AblyDeltaCodec.framework */,
+				84F2716226BEA3A0001FB60D /* DeltaCodec-iOS-Tests.xctest */,
+				84F2717026BEA3CD001FB60D /* DeltaCodec-tvOS-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,7 +264,9 @@
 				D7BC7EA72321C91500CF6FFD /* DeltaCodecTests.m */,
 				D71784AE237CC8F700FF9B98 /* DeltaCodecTests.swift */,
 				D71784AD237CC8F700FF9B98 /* DeltaCodecTests-Bridging-Header.h */,
-				D7BC7EA92321C91500CF6FFD /* Info.plist */,
+				84F2716326BEA3A0001FB60D /* Info-iOS.plist */,
+				84F2717126BEA3CD001FB60D /* Info-tvOS.plist */,
+				D7BC7EA92321C91500CF6FFD /* Info-macOS.plist */,
 			);
 			path = DeltaCodecTests;
 			sourceTree = "<group>";
@@ -321,6 +365,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		84F2715626BEA3A0001FB60D /* DeltaCodec-iOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F2715F26BEA3A0001FB60D /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS-Tests" */;
+			buildPhases = (
+				84F2715926BEA3A0001FB60D /* Sources */,
+				84F2715C26BEA3A0001FB60D /* Frameworks */,
+				84F2715E26BEA3A0001FB60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F2717526BEA60D001FB60D /* PBXTargetDependency */,
+			);
+			name = "DeltaCodec-iOS-Tests";
+			productName = AblyCodecTests;
+			productReference = 84F2716226BEA3A0001FB60D /* DeltaCodec-iOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F2716426BEA3CD001FB60D /* DeltaCodec-tvOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F2716D26BEA3CD001FB60D /* Build configuration list for PBXNativeTarget "DeltaCodec-tvOS-Tests" */;
+			buildPhases = (
+				84F2716726BEA3CD001FB60D /* Sources */,
+				84F2716A26BEA3CD001FB60D /* Frameworks */,
+				84F2716C26BEA3CD001FB60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F2717326BEA5FE001FB60D /* PBXTargetDependency */,
+			);
+			name = "DeltaCodec-tvOS-Tests";
+			productName = AblyCodecTests;
+			productReference = 84F2717026BEA3CD001FB60D /* DeltaCodec-tvOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D71784BA237CE05100FF9B98 /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS" */;
@@ -357,9 +437,9 @@
 			productReference = D7BC7E7E23211AC100CF6FFD /* AblyDeltaCodec.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */ = {
+		D7BC7EA42321C91500CF6FFD /* DeltaCodec-macOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodecTests" */;
+			buildConfigurationList = D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec-macOS-Tests" */;
 			buildPhases = (
 				D7BC7EA12321C91500CF6FFD /* Sources */,
 				D7BC7EA22321C91500CF6FFD /* Frameworks */,
@@ -368,11 +448,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				D7BC7EAC2321C91500CF6FFD /* PBXTargetDependency */,
+				84F2717726BEA622001FB60D /* PBXTargetDependency */,
 			);
-			name = DeltaCodecTests;
+			name = "DeltaCodec-macOS-Tests";
 			productName = AblyCodecTests;
-			productReference = D7BC7EA52321C91500CF6FFD /* DeltaCodecTests.xctest */;
+			productReference = D7BC7EA52321C91500CF6FFD /* DeltaCodec-macOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */ = {
@@ -452,16 +532,32 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7BC7EA42321C91500CF6FFD /* DeltaCodecTests */,
 				D7BC7E7D23211AC100CF6FFD /* DeltaCodec-macOS */,
+				D7BC7EA42321C91500CF6FFD /* DeltaCodec-macOS-Tests */,
 				D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */,
+				84F2715626BEA3A0001FB60D /* DeltaCodec-iOS-Tests */,
 				D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */,
+				84F2716426BEA3CD001FB60D /* DeltaCodec-tvOS-Tests */,
 				D7CF61B6238441FE0019C1AA /* DeltaCodec-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84F2715E26BEA3A0001FB60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F2716C26BEA3CD001FB60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D71784B3237CE05100FF9B98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,6 +596,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84F2715926BEA3A0001FB60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2715A26BEA3A0001FB60D /* DeltaCodecTests.m in Sources */,
+				84F2715B26BEA3A0001FB60D /* DeltaCodecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F2716726BEA3CD001FB60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2716826BEA3CD001FB60D /* DeltaCodecTests.m in Sources */,
+				84F2716926BEA3CD001FB60D /* DeltaCodecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D71784B1237CE05100FF9B98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,14 +662,114 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D7BC7EAC2321C91500CF6FFD /* PBXTargetDependency */ = {
+		84F2717326BEA5FE001FB60D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7CF61A9238441E90019C1AA /* DeltaCodec-tvOS */;
+			targetProxy = 84F2717226BEA5FE001FB60D /* PBXContainerItemProxy */;
+		};
+		84F2717526BEA60D001FB60D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D71784B4237CE05100FF9B98 /* DeltaCodec-iOS */;
+			targetProxy = 84F2717426BEA60D001FB60D /* PBXContainerItemProxy */;
+		};
+		84F2717726BEA622001FB60D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D7BC7E7D23211AC100CF6FFD /* DeltaCodec-macOS */;
-			targetProxy = D7BC7EAB2321C91500CF6FFD /* PBXContainerItemProxy */;
+			targetProxy = 84F2717626BEA622001FB60D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		84F2716026BEA3A0001FB60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeltaCodecTests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84F2716126BEA3A0001FB60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeltaCodecTests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		84F2716E26BEA3CD001FB60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeltaCodecTests/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		84F2716F26BEA3CD001FB60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeltaCodecTests/Info-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		D71784BB237CE05100FF9B98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -788,8 +1002,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DeltaCodecTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = "DeltaCodecTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -798,11 +1011,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos iphonesimulator appletvsimulator watchsimulator";
+				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -813,8 +1025,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DeltaCodecTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = "DeltaCodecTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -823,10 +1034,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.DeltaCodecTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos iphonesimulator appletvsimulator watchsimulator";
+				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "DeltaCodecTests/DeltaCodecTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -948,6 +1158,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84F2715F26BEA3A0001FB60D /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F2716026BEA3A0001FB60D /* Debug */,
+				84F2716126BEA3A0001FB60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F2716D26BEA3CD001FB60D /* Build configuration list for PBXNativeTarget "DeltaCodec-tvOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F2716E26BEA3CD001FB60D /* Debug */,
+				84F2716F26BEA3CD001FB60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D71784BA237CE05100FF9B98 /* Build configuration list for PBXNativeTarget "DeltaCodec-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -975,7 +1203,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodecTests" */ = {
+		D7BC7EAD2321C91500CF6FFD /* Build configuration list for PBXNativeTarget "DeltaCodec-macOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7BC7EAE2321C91500CF6FFD /* Debug */,
