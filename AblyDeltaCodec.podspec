@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'DeltaCodec/*.{h}', 'source/ARTDeltaCodec.h'
   s.private_header_files = 'source/config.h', 'xdelta/xdelta3/xdelta3.h', 'xdelta/xdelta3/xdelta3-blkcache.h', 'xdelta/xdelta3/xdelta3-cfgs.h', 'xdelta/xdelta3/xdelta3-decode.h', 'xdelta/xdelta3/xdelta3-djw.h', 'xdelta/xdelta3/xdelta3-fgk.h', 'xdelta/xdelta3/xdelta3-hash.h', 'xdelta/xdelta3/xdelta3-internal.h', 'xdelta/xdelta3/xdelta3-list.h', 'xdelta/xdelta3/xdelta3-lzma.h', 'xdelta/xdelta3/xdelta3-main.h', 'xdelta/xdelta3/xdelta3-merge.h', 'xdelta/xdelta3/xdelta3-second.h'
   s.xcconfig = {
-    "GCC_PREPROCESSOR_DEFINITIONS" => 'HAVE_CONFIG_H=1'
+    "GCC_PREPROCESSOR_DEFINITIONS" => 'HAVE_DELTA_CONFIG_H=1'
   }
 end
