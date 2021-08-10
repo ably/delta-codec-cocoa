@@ -42,8 +42,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7BC7EA42321C91500CF6FFD"
-               BuildableName = "DeltaCodecTests.xctest"
-               BlueprintName = "DeltaCodecTests"
+               BuildableName = "DeltaCodec-macOS-Tests.xctest"
+               BlueprintName = "DeltaCodec-macOS-Tests"
                ReferencedContainer = "container:DeltaCodec.xcodeproj">
             </BuildableReference>
          </TestableReference>

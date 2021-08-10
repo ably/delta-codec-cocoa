@@ -6,7 +6,7 @@
 
 Cocoa **VCDiff decoder**.
 
-Uses [Xdelta version 3](https://github.com/jmacd/xdelta), a C library for delta compression using VCDIFF/[RFC 3284](https://tools.ietf.org/html/rfc3284) streams.
+Uses [Xdelta version 3](https://github.com/ably-forks/xdelta/tree/xdelta-cocoa), a C library - forked by Ably - for delta compression using VCDIFF/[RFC 3284](https://tools.ietf.org/html/rfc3284) streams.
 
 ## Objective-C example
 
