@@ -37,7 +37,7 @@ let package = Package(
                 .headerSearchPath("include"),
             	.headerSearchPath("source"),
                 .headerSearchPath("xdelta/xdelta3"),
-                .define("HAVE_CONFIG_H", to: "1"),
+                .define("HAVE_DELTA_CONFIG_H", to: "1"),
             ]
         )
     ],
