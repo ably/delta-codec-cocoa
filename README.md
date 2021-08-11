@@ -141,3 +141,35 @@ Returns a `NSData` object of the target. It can return `nil`.
 
 The `delta` will be the new `base`.
 
+## We use both `Xcodeproj` and `Package.swift`
+
+We currently have both these files, each contain their own build configuration/ settings. This means one build may succeed whereas the other may fail. This is required because Carthage and Cocoapods use `Xcodeproj` but SPM uses the `Package.swift`.
+
+## Release Process
+
+For each release, the following needs to be done:
+
+* Create a new branch release/x.x.x (where x.x.x is the new version number) from the main branch
+* Bump the version numbers in `AblyDeltaCodec.podspec` and in the Xcode project.
+* Run [`github_changelog_generator`](https://github.com/github-changelog-generator/github-changelog-generator) to automate the update of the [CHANGELOG](./CHANGELOG.md). This may require some manual intervention, both in terms of how the command is run and how the change log file is modified. Your mileage may vary:
+    * The command you will need to run will look something like this: `github_changelog_generator -u ably -p ably-cocoa --since-tag 1.2.5 --output delta.md`
+    * Using the command above, `--output delta.md` writes changes made after `--since-tag` to a new file
+    * The contents of that new file (`delta.md`) then need to be manually inserted at the top of the `CHANGELOG.md`, changing the "Unreleased" heading and linking with the current version numbers
+    * Also ensure that the "Full Changelog" link points to the new version tag instead of the `HEAD`
+    * Commit this change: `git add CHANGELOG.md && git commit -m "Update change log."`
+* Push both commits to origin: `git push -u origin release/x.x.x`
+* Make a pull request against `main` and await approval of reviewer(s)
+* Once approved and/or any additional commits have been added, merge the PR
+* Steps to perform *before* pushing a release tag up:
+  * Build the Swift Package locally: Run `swift build` or `open Package.swift` and build the library with Xcode. This ensures this library will build for applications using Swift Package Manafer.
+  * Build the Xcode Project: `open DeltaCodec.xcodeproj` and build the library with Xcode. This ensures the library will build for applications using Carthage.
+  * Run `pod lib lint` to validate the Podspec and ensure the library will build for Cocoapods.
+  * Warning: Currently, there are 14 warnings related to the `xdelta3` submodule. We run `pod lib lint --allow-warnings` instead.
+  * Test the library integration in projects: SPM (in an Xcode project), Cocoapods (in a podfile) and Carthage (in a cartfile).
+* If any fixes are needed (e.g. the lint fails with warnings) then either commit them to `main` branch now if they are simple warning fixes or perhaps consider raising a new PR if they are complex or likely to need review.
+* Create a tag for this version number using `git tag x.x.x`
+* Push the tag using `git push origin x.x.x`
+* Release an update for CocoaPods using `pod trunk push AblyDeltaCodec.podspec --allow-warnings`. Details on this command, as well as instructions for adding other contributors as maintainers, are at [Getting setup with Trunk](https://guides.cocoapods.org/making/getting-setup-with-trunk.html) in the [CocoaPods Guides](https://guides.cocoapods.org/)
+* Add to [releases](https://github.com/ably/delta-codec-cocoa/releases)
+  * refer to previous releases for release notes format
+* Test the integration of the library in a Xcode project using Carthage and CocoaPods using the [installation guide](https://github.com/ably/ably-cocoa#installation-guide)
