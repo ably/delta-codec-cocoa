@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.2](https://github.com/ably/delta-codec-cocoa/tree/1.3.2)
+
+[Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.1...1.3.2)
+
+**Merged pull requests:**
+
+- Removed unused functions in xdelta submodule [\#20](https://github.com/ably/delta-codec-cocoa/pull/20) ([maratal](https://github.com/maratal))
+
 ## [1.3.1](https://github.com/ably/delta-codec-cocoa/tree/1.3.1)
 
 [Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.0...1.3.1)
