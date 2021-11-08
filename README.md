@@ -150,7 +150,7 @@ We currently have both these files, each contain their own build configuration/ 
 For each release, the following needs to be done:
 
 * Create a new branch release/x.x.x (where x.x.x is the new version number) from the main branch
-* Bump the version numbers in `AblyDeltaCodec.podspec` and in the Xcode project.
+* Bump the version numbers in `AblyDeltaCodec.podspec` and in the Xcode project. Commit this.
 * Run [`github_changelog_generator`](https://github.com/github-changelog-generator/github-changelog-generator) to automate the update of the [CHANGELOG](./CHANGELOG.md). This may require some manual intervention, both in terms of how the command is run and how the change log file is modified. Your mileage may vary:
     * The command you will need to run will look something like this: `github_changelog_generator -u ably -p ably-cocoa --since-tag 1.2.5 --output delta.md`
     * Using the command above, `--output delta.md` writes changes made after `--since-tag` to a new file
