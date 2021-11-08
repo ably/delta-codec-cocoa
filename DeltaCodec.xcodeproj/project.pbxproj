@@ -814,7 +814,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
 				PRODUCT_NAME = AblyDeltaCodec;
@@ -847,7 +847,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				MODULEMAP_FILE = "$(SRCROOT)/DeltaCodec/AblyDeltaCodec.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ably.DeltaCodec-iOS";
 				PRODUCT_NAME = AblyDeltaCodec;
