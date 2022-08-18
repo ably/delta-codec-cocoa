@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.3](https://github.com/ably/delta-codec-cocoa/tree/1.3.3)
+
+[Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.2...1.3.3)
+
+**Closed issues:**
+
+- Umbrella header for module 'AblyDeltaCodec' does not include header 'config.h' [\#15](https://github.com/ably/delta-codec-cocoa/issues/15)
+
+**Merged pull requests:**
+
+- Remove unused `config.h` header from umbrella header directory [\#23](https://github.com/ably/delta-codec-cocoa/pull/23) ([lawrence-forooghian](https://github.com/lawrence-forooghian))
+
 ## [1.3.2](https://github.com/ably/delta-codec-cocoa/tree/1.3.2)
 
 [Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.1...1.3.2)
