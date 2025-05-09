@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.4](https://github.com/ably/delta-codec-cocoa/tree/1.3.4)
+
+[Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.3...1.3.4)
+
+**Closed issues:**
+
+- Missing LICENSE [\#22](https://github.com/ably/delta-codec-cocoa/issues/22)
+
 ## [1.3.3](https://github.com/ably/delta-codec-cocoa/tree/1.3.3)
 
 [Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.2...1.3.3)
