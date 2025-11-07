@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'AblyDeltaCodec'
-  s.version           = '1.3.4'
+  s.version           = '1.3.5'
   s.summary           = 'Cocoa VCDiff decoder'
   s.homepage          = 'https://ably.com'
   s.author            = { "Ably" => "support@ably.com" }

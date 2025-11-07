@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.5](https://github.com/ably/delta-codec-cocoa/tree/1.3.5)
+
+Fixes an "Undefined symbol" linker error when using this library. ([#27](https://github.com/ably/delta-codec-cocoa/pull/27))
+
+[Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.4...1.3.5)
+
 ## [1.3.4](https://github.com/ably/delta-codec-cocoa/tree/1.3.4)
 
 [Full Changelog](https://github.com/ably/delta-codec-cocoa/compare/1.3.3...1.3.4)
