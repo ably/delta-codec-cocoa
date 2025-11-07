@@ -38,6 +38,9 @@ let package = Package(
             	.headerSearchPath("source"),
                 .headerSearchPath("xdelta/xdelta3"),
                 .define("HAVE_DELTA_CONFIG_H", to: "1"),
+            ],
+            linkerSettings: [
+                .linkedFramework("Foundation")
             ]
         )
     ],
