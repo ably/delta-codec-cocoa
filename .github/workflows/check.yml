@@ -1,28 +1,36 @@
 on:
   pull_request:
   push:
-    branches:    
+    branches:
       - main
+
+permissions: {}
 
 jobs:
   macOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
+          persist-credentials: false
       - name: Build and Test
         run: xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-macOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
   iOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         destination: ['platform=iOS Simulator,OS=26.0.1,name=iPhone 17']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
+          persist-credentials: false
       - name: Build and Test
         run: xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-iOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
     env:
@@ -30,13 +38,16 @@ jobs:
 
   tvOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         destination: ['platform=tvOS Simulator,OS=18.2,name=Apple TV']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
+          persist-credentials: false
       - name: Build and Test
         run: xcodebuild clean test -project DeltaCodec.xcodeproj -scheme DeltaCodec-tvOS -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
     env:
