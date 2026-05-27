@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
           persist-credentials: false
@@ -27,7 +27,7 @@ jobs:
       matrix:
         destination: ['platform=iOS Simulator,OS=26.0.1,name=iPhone 17']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
           persist-credentials: false
@@ -44,7 +44,7 @@ jobs:
       matrix:
         destination: ['platform=tvOS Simulator,OS=18.2,name=Apple TV']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
         with:
           submodules: 'recursive'
           persist-credentials: false
