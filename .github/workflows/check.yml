@@ -1,12 +1,16 @@
 on:
   pull_request:
   push:
-    branches:    
+    branches:
       - main
+
+permissions: {}
 
 jobs:
   macOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v2
         with:
@@ -17,6 +21,8 @@ jobs:
 
   iOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         destination: ['platform=iOS Simulator,OS=26.0.1,name=iPhone 17']
@@ -32,6 +38,8 @@ jobs:
 
   tvOS:
     runs-on: macOS-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
         destination: ['platform=tvOS Simulator,OS=18.2,name=Apple TV']
